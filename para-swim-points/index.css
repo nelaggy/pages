@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    background-color:ghostwhite;
+    font-size: 12pt;
+}
+html, body {
+    font-family:'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+}
+  
+.splash {
+    background-color: darkblue;
+    display: flex;
+    padding-left: 80px;
+    padding: 10rem 3rem;
+    align-items: center;
+    width: auto;
+}
+
+.icon-foreground-box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    vertical-align: middle;
+    display: flex;
+}
+
+.title-box {
+    padding: 20px;
+    margin: 0;
+    vertical-align: middle;
+    flex-grow: 1;
+    word-wrap: normal;
+}
+
+.title {
+    font-size: 4rem;
+    margin-block-start: 0em;
+    margin-block-end: 0.5em;
+    line-height: 0.9em;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.badges {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.info-grid {
+    margin: 6rem;
+    display: grid;
+    column-gap: 6rem;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screenshot {
+    border-width: 0.1em;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1em;
+    height: auto;
+    width: 20rem;
+    max-width: 100%;
+}
+
+@media (max-width: 750px) {
+    .icon-foreground-box {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        margin: 2rem;
+    }
+}
